@@ -47,19 +47,19 @@ public class MainActivity extends AppCompatActivity {
 
         boolean isUnameEmpty = uname.isEmpty();
         boolean isPwEmpty = pword.isEmpty();
-//
-//
-//        if(isUnameEmpty){
-//            setError(tiUname, "No Username");
-//        }
-//
-//        if(isPwEmpty){
-//            setError(tiPw, "No Password");
-//        }
-//
-//        if((!isUnameEmpty && !uname.equals("user")) || (!isPwEmpty && !pword.equals("12345"))) {
-//            setError(tiPw, "Invalid password");
-//        }
+
+
+        if(isUnameEmpty){
+            setError(tiUname, "No Username");
+        }
+
+        if(isPwEmpty){
+            setError(tiPw, "No Password");
+        }
+
+        if((!isUnameEmpty && !uname.equals("user")) || (!isPwEmpty && !pword.equals("12345"))) {
+            setError(tiPw, "Invalid password");
+        }
 
         if(tiUname.getError() == null && tiPw.getError() == null){
             startActivity(new Intent(MainActivity.this, PokedexActivity.class));
