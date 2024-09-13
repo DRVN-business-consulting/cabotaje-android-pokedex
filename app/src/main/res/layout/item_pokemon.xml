@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPadding="20dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            tools:src="@drawable/bulbasaur_thumb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            tools:text="Bulbasaur"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/ivThumbnail"/>
+
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivTypeOne"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:src="@drawable/type_grass"
+                android:layout_marginEnd="10dp"/>
+            <ImageView
+                android:id="@+id/ivTypeTwo"
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:src="@drawable/type_grass"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
